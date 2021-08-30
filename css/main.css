@@ -14,7 +14,8 @@ navigation{
     position: fixed;
     z-index: 1000;
     width: 100%;
-
+    top: 0;
+    left: 0;
 }
 nav .navbar-collapse .navbar-nav{
     margin-left: auto;
@@ -54,6 +55,9 @@ navigation .navbar-light .navbar-collapse .form-inline .inroll-btn{
 @media (max-width:600px) {
     navigation .navbar-light .navbar-brand img{
         height: 43px;
+    }
+    navigation{
+        padding: 10px 5px;
     }
   
 }
@@ -105,17 +109,6 @@ header{
     color: #ffffff;
     margin-top: 30px;
 }
-@media (max-width:600px) {
-    .header-background{
-        width: 50vh;
-        height: 35vh;
-        
-    }
-    header{
-        padding: 20px 20px;
-
-    }
-}
 @media (max-width:1000px){
     .header-background{
         width: 80vh;
@@ -123,6 +116,18 @@ header{
         
     }
 }
+@media (max-width:600px) {
+    .header-background{
+        width: 50vh !important;
+        height: 35vh !important;
+        
+    }
+    header{
+        padding: 20px;
+
+    }
+}
+
 /* end of header */
 /* start of about */
 .about{
