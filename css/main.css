@@ -63,6 +63,20 @@ navigation .navbar-light .navbar-collapse .form-inline .inroll-btn{
         display: inherit;
     }
 }
+@media (max-width:991px){
+    navigation .navbar-light .navbar-collapse .form-inline .inroll-btn{
+        background-color: unset;
+        color: #334565;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0;
+    }
+    navigation .navbar-light .navbar-collapse .form-inline .login-btn{
+        padding: 0;
+    }
+}
 
 /* end of navigation */
 /* start of header */
@@ -113,12 +127,20 @@ header{
 @media (max-width:600px) {
     .header-background{
         width: 50vh !important;
-        height: 35vh !important;
+        height: 38vh !important;
+        bottom: unset;
+        top: 115px;
         
     }
     header{
         padding: 20px;
 
+    }
+    .main-text .order-btn{
+        width: 100%;
+    }
+    .main-text{
+        margin-top: 400px;
     }
 }
 
@@ -203,6 +225,7 @@ font-weight: bold;
     } 
     .perfect-manging .order-btn{
         margin-bottom: 30px;
+        width: 100%;
     }
 }
 @media (max-width:1000px) {
@@ -329,6 +352,9 @@ height: 950px;
     .price-card{
         margin-top: 10px;
     }
+    .price-card .inroll-btn{
+        width: 100%;
+    }
 }
 /* end of prices */
 /* footer */
@@ -373,5 +399,13 @@ height: 45px;
 .copy-right{
     font-size: 20px;
     color: #3B5DE7;
+}
+@media (max-width:600px) {
+    .footer-info{
+        border-radius: unset;
+    } 
+    .footer-info .order-btn{
+        width: 100%;
+    }
 }
 /* end of footer */
