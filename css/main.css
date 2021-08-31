@@ -511,6 +511,13 @@ form .form-group label{
     color: #334565;
     font-weight: bold;
 }
+form .sub-btn{
+    width: 100%;
+    background-color: #3B5DE7;
+    color: #ffffff;
+    margin-bottom: 10px;
+
+}
 @media (max-width:767px) {
     .form-img{
         display: none;
