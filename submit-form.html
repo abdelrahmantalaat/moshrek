@@ -12,14 +12,137 @@
     <link rel="stylesheet" href="css/main.css">
     <title>submit form</title>
 </head>
-<body>
+<body class="sub-form">
+    <navigation id="navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#prices">خطة الاسعار</a>
+                      </li>
+                   
+                   
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0 ">
+                    <button class="btn login-btn  my-2 my-sm-0" type="submit">تسجيل الدخول</button>
+                    
+                    <button class="btn  inroll-btn my-2 my-sm-0" type="submit" >اشترك الان</button>
+                  </form>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      
+    </navigation>
 <div class="main-form">
 <div class="container">
     <div class="row">
         <div class="col-md-6">
            <form action="">
-               
+            <div class="form-group">
+                <label  for="exampleInputName">الاسم</label>
+                <input type="text" class="form-control" id="exampleInputName"  placeholder="ادخل اسمك">
+                
+              </div>
+              <div class="form-group">
+                <label  for="exampleInputEmail">البريد الالكترونى</label>
+                <input type="email" class="form-control" id="exampleInputEmail"  placeholder="البريد الالكترونى">
+                
+              </div>
+              <div class="form-group">
+                <label  for="exampleInputmopile">رقم الجوال</label>
+                <input type="text" class="form-control" id="exampleInputmopile"  placeholder="رقم الجوال">
+                
+              </div>
+              <div class="form-group">
+                <label  for="exampleInputpassword">كلمة المرور</label>
+                <input type="password" class="form-control" id="exampleInputpassword"  placeholder="كلمة المرور">
+                
+              </div>
+              <div class="form-group">
+                <label  for="exampleInputpassword">اعد كتابة كلمة المرور</label>
+                <input type="password" class="form-control" id="exampleInputpassword"  placeholder="اعد كتابة كلمة المرور">
+                
+              </div>
+              <div class="form-group">
+                <label  for="exampleInputlogo">الشعار</label>
+                <input type="file" class="form-control" id="exampleInputlogo"  placeholder="الشعار">
+                
+              </div>
+              <div class="form-group">
+                <label  for="exampleInputcountry">الدولة</label>
+                <select class="form-control">
+                    <option>مصر</option>
+                    <option>السعودية</option>
+                  </select>
+                
+                
+              </div>
+              <div class="form-group">
+                <label  for="exampleInputcity">المدينة</label>
+                <input type="text" class="form-control" id="exampleInputcity"  placeholder="المدينة">
+                
+              </div>
+              <div class="form-group">
+                <label  for="exampleInputcity">الحى</label>
+                <input type="text" class="form-control" id="exampleInputcity"  placeholder="الحى">
+                
+              </div>
+              <div class="form-group">
+                <label  for="">كيف سمعت عنا</label>
+                <select class="form-control">
+                    <option>facebook</option>
+                    <option>twitter</option>
+                  </select>
+                
+                
+              </div>
+              <div class="form-group">
+                <label  for="">حجم الاكاديمية</label>
+                <input type="text" class="form-control" id=""  placeholder="حجم الاكاديمية">
+                
+              </div>
+              <div class="coach-info">
+                <h2>بيانات المدرب</h2>
+                <div class="form-group">
+                    <label  for="">الرياضه</label>
+                    <select class="form-control">
+                        <option>كرة القدم</option>
+                        <option>كرة السله</option>
+                      </select>
+                    
+                    
+                  </div> 
+                  <div class="form-group">
+                    <label  for="">الجنسية</label>
+                    <input type="text" class="form-control" id=""  placeholder="الجنسية">
+                    
+                  </div>
+                  <div class="form-group">
+                    <label  for="">رقم الهوية</label>
+                    <input type="text" class="form-control" id=""  placeholder="رقم الهوية">
+                    
+                  </div>
+              </div>
            </form> 
+        </div>
+        <div class="col-md-6">
+            <img src="img/ILLUSTRATION1.svg" class="form-img" alt="">
         </div>
     </div>
 </div>

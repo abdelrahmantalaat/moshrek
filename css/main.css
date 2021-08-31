@@ -45,6 +45,7 @@ navigation .navbar-light .navbar-collapse .form-inline .inroll-btn{
     width: 180px;
     height: 58px;
     color: #ffffff;
+    padding-top: 15px;
 }
 @media (max-width:600px) {
     navigation .navbar-light .navbar-brand img{
@@ -116,6 +117,7 @@ header{
     height: 58px;
     color: #ffffff;
     margin-top: 30px;
+    padding-top: 15px;
 }
 @media (max-width:1000px){
     .header-background{
@@ -250,6 +252,7 @@ font-weight: bold;
     height: 58px;
     color: #ffffff;
     margin-top: 30px;
+    padding-top: 15px;
 }
 @media (max-width:600px) {
     .perfect-manging .manging-img{
@@ -395,6 +398,7 @@ height: 950px;
     height: 58px;
     color: #ffffff;
     margin-top: 30px; 
+    padding-top: 15px;
 }
 @media (max-width:600px) {
     .prices{
@@ -442,6 +446,7 @@ height: 950px;
     opacity: 1;
     color: #ffffff;
     margin-top: 20px;
+    padding-top: 15px;
 }
 .footer .logo img{
 width: 105px;
@@ -470,3 +475,44 @@ height: 45px;
     }
 }
 /* end of footer */
+/* start of submit form */
+form .form-group{
+    margin-top: 10px;
+}
+form .form-group label{
+    font-size: 18px;
+    color: #334565;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.main-form{
+    margin-top: 100px;
+    
+}
+.sub-form{
+    background-color: #F5F7FE;
+}
+.form-img{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+}
+.coach-info{
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px #3B5DE714;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.coach-info h2 {
+    color: #334565;
+    font-weight: bold;
+}
+@media (max-width:767px) {
+    .form-img{
+        display: none;
+    }
+}
