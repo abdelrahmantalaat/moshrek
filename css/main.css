@@ -98,7 +98,7 @@ header{
 }
 .header-background img{
     width: 100%;
-    height: 100%;
+
 }
 .main-text{
     color: #334565;
@@ -221,6 +221,14 @@ color: #334565;
 font-size: 50px;
 color: #334565;
 }
+@media (max-width:600px) {
+    .owl-prev{
+        display: none;
+    }
+    .owl-next{
+        display: none;
+    }
+}
 .about-card .card-logo img{
     width: 64px;
     height: 64px;
@@ -255,11 +263,8 @@ color: #334565;
 /* end of about */
 /* start oof perfect-manging */
 .perfect-manging .manging-img{
-    width: 592px;
-height: 477px;
-    background-image: url(/img/illustration2@2x.png);
-   
-    background-size: cover;
+width: 100%;
+height: 100%;
 }
 .perfect-manging h2{
 color: #334565;
