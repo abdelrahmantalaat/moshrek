@@ -91,13 +91,15 @@ header{
 .header-background{
     width: 105vh;
     height: 80vh;
-    background-image: url(/img/ILLUSTRATION1.svg);
-    background-size: cover;
+   
     position: absolute;
     bottom: 0;
     left: 0;
 }
-
+.header-background img{
+    width: 100%;
+    height: 100%;
+}
 .main-text{
     color: #334565;
     margin-top: 180px;
@@ -135,10 +137,10 @@ header{
 
 @media (max-width:600px) {
     .header-background{
-        width: 50vh !important;
+        /* width: 50vh !important;
         height: 38vh !important;
         bottom: unset;
-        top: 115px;
+        top: 115px; */
         
     }
     header{
@@ -154,8 +156,8 @@ header{
 }
 @media (max-width:770px) {
     .header-background{
-        width: 70vh !important;
-        height: 50vh !important;
+        width: 60vh !important;
+        height: 45vh !important;
         bottom: unset;
         top: 115px;
         
@@ -168,9 +170,10 @@ header{
         width: 100%;
     }
     .main-text{
-        margin-top: 445px;
+        margin-top: 450px;
     }
 }
+
 
 /* end of header */
 /* start of about */
@@ -179,13 +182,14 @@ header{
     text-align: center;
     align-items: center;
     padding: 80px;
+    direction: ltr;
 }
 
-.about .question{
+ .question{
     color: #FFBB57;
     font-size: 32px;
 }
-.about .about-card{
+ .about-card{
     width: 300px;
     height: 250px;
     background: #ffffff;
@@ -193,15 +197,44 @@ header{
     border-radius: 20px;
     opacity: 1;
     padding: 30px 15px;
+    text-align: center;
 }
-.about .about-card:hover{
+.owl-prev{
+    position: absolute;
+    left: 0;
+    transform: translate(-30px , 50%);
+    top: 0;
+    
+}
+.owl-prev span{
+font-size: 50px;
+color: #334565;
+}
+.owl-next{
+    position: absolute;
+    right:  0;
+    transform: translate(30px , 50%);
+    top: 0;
+    
+}
+.owl-next span{
+font-size: 50px;
+color: #334565;
+}
+.about-card .card-logo img{
+    width: 64px;
+    height: 64px;
+    margin-right: auto;
+    margin-left: auto;
+}
+ .about-card:hover{
     background-color: #F5F7FE;
 }
-.about .about-card .card-description h4{
+ .about-card .card-description h4{
     color: #334565;
     font-weight: bold;
 }
-.about .about-card .card-description p{
+ .about-card .card-description p{
     color:#9F9F9F;
     font-size: 18px;
 }
@@ -209,12 +242,12 @@ header{
     .about{
         padding: 20px;
     }
-    .about .about-card{
+     .about-card{
         margin-top: 10px;
     }
 }
 @media (max-width:1350px) {
-    .about .about-card{
+    .about-card{
         width: auto;
         height: auto;
     }
@@ -344,6 +377,10 @@ height: 950px;
     text-align: center;
     align-items: center;
     padding: 60px;
+    direction: ltr;
+}
+.item{
+    padding: 10px;
 }
 .price-role{
     color: #FFBB57;
@@ -352,11 +389,13 @@ height: 950px;
 }
 .price-card{
     width: 100%;
+    height: 550px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 8px 20px #3B5DE714;
     border-radius: 20px;
     opacity: 1;
     padding: 30px;
+    direction: rtl;
 }
 .price-card .main-title{
     color: #334565;
@@ -381,6 +420,11 @@ height: 950px;
 .price-card .card-achivments ul{
     padding: 0;
 
+}
+.price-card .card-achivments ul img{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
 }
 .price-card .card-achivments li{
     list-style: none;
