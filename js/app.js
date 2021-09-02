@@ -3,44 +3,24 @@ window.onscroll = function() {
     nav.style.backgroundColor = '#F5F7FE'
 };
 
-$('.owl-one').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:4,
-            nav:true,
-            loop:false
-        }
-    }
-})
-$('.owl-two').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:false
-        }
-    }
-})
+$(document).ready(function(){
+    $("#player-next-btn").click(function(){
+        $("#player-info").fadeOut()
+        $("#academy-info").fadeIn("slow")
+    })
+    $("#academy-next-btn").click(function(){
+        $("#academy-info").fadeOut()
+        $("#coach-info").fadeIn("slow")
+    })
+    $("#academy-prev-btn").click(function(){
+        $("#academy-info").fadeOut()
+        $("#player-info").fadeIn("slow")
+    })
+    $("#coach-prev-btn").click(function(){
+        $("#coach-info").fadeOut()
+        $("#academy-info").fadeIn("slow")
+    })
+    });
+
+
 

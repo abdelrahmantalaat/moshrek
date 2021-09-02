@@ -535,19 +535,15 @@ form .form-group label{
     font-weight: bold;
 }
 .main-form{
-    margin-top: 100px;
+    margin-top: 53px;
     
 }
 .sub-form{
     background-color: #F5F7FE;
+    background-image: url(/img/ILLUSTRATION1.svg);
+    background-size: cover;
 }
-.form-img{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-}
-.coach-info{
+.form-container{
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0px 4px 10px #3B5DE714;
@@ -555,11 +551,51 @@ form .form-group label{
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
+    opacity: 1;
+    height: auto;
+    transition: 0.9; 
 }
-.coach-info h2 {
+.coach-info , .player-info ,.academy-info{
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px #3B5DE714;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+.block{
+    display: block !important;
+    transition: 0.9 !important;
+}
+.none{
+    display: none !important;
+    transition: 0.9 !important;
+}
+.coach-info , .academy-info{
+    display: none;
+
+}
+.form-floating label{
+    left: unset;
     color: #334565;
     font-weight: bold;
 }
+.coach-info h2 ,.player-info h2 ,.academy-info h2{
+    color: #334565;
+    font-weight: bold;
+}
+.form-navigation{
+    margin-top: 10px;
+}
+.form-navigation ul {
+    list-style: none;
+}
+.form-navigation ul li {
+    display: inline-block;
+}
+
 form .sub-btn{
     width: 100%;
     background-color: #3B5DE7;
