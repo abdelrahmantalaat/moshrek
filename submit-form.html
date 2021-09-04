@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/bootstrap-float-label.css">
+   
+<link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>submit form</title>
 </head>
@@ -51,74 +53,79 @@
         </div>
       
     </navigation>
+   
 <div class="main-form">
 <div class="container">
     <div class="row">
         <div class="col-md-12">
            <form action="">
              <div class="form-container">
-              <div class="player-info" id="player-info">
-           
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="ادخل اسمك">
+              <div class="player-info pt-4" id="player-info">
+               
+                
+                  <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control name-test" id="floatingInput" placeholder="ادخل اسمك">
                   <label for="floatingInput">الاسم</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="البريد الالكترونى">
+                    <label for="floatingInput">البريد الالكترونى</label>
+                  </div>
+                
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="رقم الجوال">
+                    <label for="floatingInput">رقم الجوال</label>
+                  </div>
+                 
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingInput" placeholder="كلمة المرور">
+                    <label for="floatingInput">كلمة المرور</label>
+                  </div>
+                 
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingInput" placeholder="اعد كتابة كلمة المرور">
+                    <label for="floatingInput">اعد كتابة كلمة المرور</label>
+                  </div>
+                  <div class="form-group">
+                    <label  for="exampleInputlogo">الشعار</label>
+                    <input type="file" class="form-control" id="exampleInputlogo"  placeholder="الشعار">
+                    
+                  </div>
+              
+          
+                  <div class="form-group">
+                    <label  for="">كيف سمعت عنا</label>
+                    <select class="form-control">
+                        <option>facebook</option>
+                        <option>twitter</option>
+                      </select>
+                    
+                    
+                  </div>
+                
+                  <div class="form-navigation">
+                    <ul>
+                      <li><button class="btn btn-primary" type="button" disabled>السابق</button></li>
+                      <li><button class="btn btn-primary" type="button" id="player-next-btn">التالى</button></li>
+                      
+                    </ul>
+                  </div>
                 </div>
            
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="البريد الالكترونى">
-                  <label for="floatingInput">البريد الالكترونى</label>
-                </div>
-              
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="رقم الجوال">
-                  <label for="floatingInput">رقم الجوال</label>
-                </div>
-               
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="floatingInput" placeholder="كلمة المرور">
-                  <label for="floatingInput">كلمة المرور</label>
-                </div>
-               
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="floatingInput" placeholder="اعد كتابة كلمة المرور">
-                  <label for="floatingInput">اعد كتابة كلمة المرور</label>
-                </div>
-                <div class="form-group">
-                  <label  for="exampleInputlogo">الشعار</label>
-                  <input type="file" class="form-control" id="exampleInputlogo"  placeholder="الشعار">
-                  
-                </div>
-            
-        
-                <div class="form-group">
-                  <label  for="">كيف سمعت عنا</label>
-                  <select class="form-control">
-                      <option>facebook</option>
-                      <option>twitter</option>
-                    </select>
-                  
-                  
-                </div>
-              
-                <div class="form-navigation">
-                  <ul>
-                    <li><button class="btn btn-primary" type="button" id="player-next-btn">التالى</button></li>
-                    <li><button class="btn btn-primary" type="button" disabled>السابق</button></li>
-                  </ul>
-                </div>
-                </div>
+ 
+                
                 <div class="academy-info" id="academy-info">
-                  <div class="form-group">
-                    <label  for="">اسم الاكاديمية</label>
-                    <input type="text" class="form-control" id=""  placeholder="اسم الاكاديمية">
+                  <div class="form-floating mb-3">
                     
+                    <input type="text" class="form-control" id="floatingInput"  placeholder="اسم الاكاديمية">
+                    <label  for="floatingInput">اسم الاكاديمية</label>
                   </div>
-                  <div class="form-group">
-                    <label  for="">حجم الاكاديمية</label>
-                    <input type="text" class="form-control" id=""  placeholder="حجم الاكاديمية">
+                  <div class="form-floating mb-3">
                     
+                    <input type="text" class="form-control" id="floatingInput"  placeholder="حجم الاكاديمية">
+                    <label  for="floatingInput">حجم الاكاديمية</label>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group mb-3">
                     <label  for="exampleInputcountry">الدولة</label>
                     <select class="form-control">
                         <option>مصر</option>
@@ -127,26 +134,27 @@
                     
                     
                   </div>
-                  <div class="form-group">
-                    <label  for="exampleInputcity">المدينة</label>
-                    <input type="text" class="form-control" id="exampleInputcity"  placeholder="المدينة">
+                  <div class="form-floating mb-3">
                     
+                    <input type="text" class="form-control" id="floatingInput"  placeholder="المدينة">
+                    <label  for="floatingInput">المدينة</label>
                   </div>
-                  <div class="form-group">
-                    <label  for="exampleInputcity">الحى</label>
-                    <input type="text" class="form-control" id="exampleInputcity"  placeholder="الحى">
+                  <div class="form-floating mb-3">
+                    <label  for="floatingInput">الحى</label>
+                    <input type="text" class="form-control" id="floatingInput"  placeholder="الحى">
                     
                   </div>
                   <div class="form-navigation">
                     <ul>
-                      <li><button type="button" class="btn btn-primary" id="academy-next-btn">التالى</button></li>
                       <li><button type="button" class="btn btn-primary" id="academy-prev-btn">السابق</button></li>
+                      <li><button type="button" class="btn btn-primary" id="academy-next-btn">التالى</button></li>
+                      
                     </ul>
                   </div>
                 </div>
                 <div class="coach-info" id="coach-info">
                   <h2>بيانات المدرب</h2>
-                  <div class="form-group">
+                  <div class="form-group mb-3">
                       <label  for="">الرياضه</label>
                       <select class="form-control">
                           <option>كرة القدم</option>
@@ -155,20 +163,22 @@
                       
                       
                     </div> 
-                    <div class="form-group">
-                      <label  for="">الجنسية</label>
-                      <input type="text" class="form-control" id=""  placeholder="الجنسية">
+                    <div class="form-floating mb-3">
                       
+                      <input type="text" class="form-control" id="floatingInput"  placeholder="الجنسية">
+                      <label  for="floatingInput">الجنسية</label>
                     </div>
-                    <div class="form-group">
-                      <label  for="">رقم الهوية</label>
-                      <input type="text" class="form-control" id=""  placeholder="رقم الهوية">
+                    <div class="form-floating mb-3">
                       
+                      <input type="text" class="form-control" id="floatingInput"  placeholder="رقم الهوية">
+                      <label  for="floatingInput">رقم الهوية</label>
                     </div>
                     <div class="form-navigation">
                       <ul>
-                        <li><button type="button" class="btn btn-primary" disabled>التالى</button></li>
                         <li><button type="button" class="btn btn-primary" id="coach-prev-btn">السابق</button></li>
+                        <li><button type="button" class="btn btn-primary" disabled>التالى</button></li>
+                        
+                        <li><button class="btn btn-primary">submit</button></li>
                       </ul>
                     </div>
                 </div>
@@ -180,6 +190,23 @@
      </div>
     </div>
 </div>
+</div>
+
+<div class="section-num">
+  <ul class="text-center ">
+    <li >
+      <p class="main-nav first-sec current-sec" id="first-sec">1</p>
+      <p> الطالب</p>
+    </li>
+    <li >
+      <p class="main-nav secound-sec " id="secound-sec">2</p>
+      <p> الاكاديمية</p>
+    </li>
+    <li>    
+      <p class="main-nav third-sec " id="third-sec">3</p>
+      <p> المدرب</p>
+    </li>
+  </ul>
 </div>
 
 <script src="js/jquery-3.5.1.min.js"></script>
